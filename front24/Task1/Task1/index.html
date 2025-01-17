@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" /> <!-- Устанавливаем кодировку для страницы -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Обеспечиваем совместимость с более старыми версиями Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Устанавливаем правильный масштаб для мобильных устройств -->
+
+    <title>Мои Портфолио</title> <!-- Заголовок страницы, который отображается на вкладке браузера -->
+
+    <link rel="stylesheet" href="styles.css" /> <!-- Подключаем внешний файл стилей -->
+</head>
+
+<body>
+    <!-- Основной раздел с навигацией и приветственным текстом -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar-container container">
+          <div>
+            <h1 class="navbar-brand">Абхишек Тивари</h1> <!-- Имя владельца портфолио -->
+          </div>
+          <!-- Меню навигации -->
+          <ul class="menu-items">
+            <li><a href="#about">Обо мне</a></li> <!-- Ссылка на раздел о себе -->
+            <li><a href="#my-favourites">Мои любимые артисты</a></li> <!-- Ссылка на раздел с любимыми артистами -->
+            <li><a href="#contact-me">Контакты</a></li> <!-- Ссылка на раздел с контактами -->
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Контент на главной странице -->
+      <div class="home-content" id="home-page">
+        <div class="name">
+          <h1>Привет, я Абхи</h1> <!-- Приветственное сообщение -->
+          <p>Студент в МАИ, Репетитор английского языка</p> <!-- Введение (кто я, чем занимаюсь) -->
+        </div>
+        <div class="angle-down-icon">
+          <a href="#about"><i class="fas fa-angle-down"></i></a> <!-- Иконка для прокрутки вниз -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Раздел "Обо мне" -->
+    <section class="about-me" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="left-content">
+            <div>
+              <h1 class="about-heading">Обо мне</h1> <!-- Заголовок раздела о себе -->
+            </div>
+            <!-- Замененный аватар -->
+            <a href='https://postimg.cc/rKCq8tTM' target='_blank'>
+              <img src='https://i.postimg.cc/kXLGvxh6/IMG-3152.avif' border='0' alt='IMG-3152' />
+            </a> <!-- Новая фотография профиля с ссылкой на исходное изображение -->
+            <p>
+              Привет! Меня зовут Абхишек Тивари, и я — любитель технологий, стремящийся развивать свои навыки в таких областях, как машинное обучение и анализ данных. Я всегда стремлюсь узнать больше о новых технологиях и их применении в реальном мире. На данный момент я изучаю методы искусственного интеллекта и занимаюсь предсказательной аналитикой в проектах, связанных с обнаружением дефектов.
+            </p> <!-- Текст о себе, своих интересах и профессиональных целях -->
+            <div class="work-arrow">
+              <p>
+                <a href="#my-favourites">Посмотрите мои любимые фильмы и исполнителей <i class="fas fa-arrow-down"></i></a> <!-- Ссылка на раздел с любимыми фильмами и исполнителями -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел с любимыми фильмами и исполнителями -->
+    <section id="my-favourites">
+      <div class="favorites">
+        <div class="proj-heading">
+          <h1>Мои любимые фильмы и исполнители</h1> <!-- Заголовок раздела с любимыми фильмами и исполнителями -->
+        </div>
+        <div class="favorites-content container">
+          <!-- Раздел с любимыми фильмами -->
+          <div class="movies">
+            <h2>Любимые фильмы</h2> <!-- Заголовок для списка фильмов -->
+            <ul>
+              <li>Начало (Inception)</li> <!-- Первый фильм из списка -->
+              <li>Матрица (The Matrix)</li> <!-- Второй фильм -->
+              <li>Интерстеллар (Interstellar)</li> <!-- Третий фильм -->
+              <li>Бойцовский клуб (Fight Club)</li> <!-- Четвертый фильм -->
+              <li>Тёмный рыцарь (The Dark Knight)</li> <!-- Пятый фильм -->
+            </ul>
+          </div>
+
+          <!-- Раздел с любимыми исполнителями -->
+          <div class="artists">
+            <h2>Любимые исполнители</h2> <!-- Заголовок для списка исполнителей -->
+            <ul>
+              <li>The Weeknd</li> <!-- Первый исполнитель -->
+              <li>Adele</li> <!-- Второй исполнитель -->
+              <li>Lana Del Rey</li> <!-- Третий исполнитель -->
+              <li>Tony Stark</li> <!-- Четвертый исполнитель (хотя это не реальный артист, а персонаж) -->
+            </ul>
+          </div>
+
+          <!-- Ссылки на дополнительные ресурсы -->
+          <div class="more-favorites">
+            <p>Дополнительную информацию о моих любимых фильмах и музыке можно найти на:</p> <!-- Текст перед ссылками -->
+            <a href="https://www.imdb.com" target="_blank">IMDb</a> | <!-- Ссылка на IMDb -->
+            <a href="https://www.last.fm" target="_blank">Last.fm</a> <!-- Ссылка на Last.fm -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Раздел с контактной информацией -->
+    <div class="contact" id="contact-me">
+      <div class="container">
+        <div class="contact-content">
+          <h2>Контакты</h2> <!-- Заголовок раздела с контактной информацией -->
+          <p class="mail">
+            Свяжитесь со мной по email <i class="fas fa-arrow-right"></i> englishwithxl@yandex.ru <!-- Контактный email -->
+          </p>
+          <p class="links">Или найдите меня в социальных сетях:</p> <!-- Заголовок для социальных сетей -->
+          <a href="https://github.com/xlearn08" target="blank"><i class="fab fa-github"></i> Github</a> <!-- Ссылка на GitHub -->
+          <a href="https://www.t.me/oohyess99" target="blank"><i class="fab fa-telegram"></i> Telegram</a> <!-- Ссылка на Telegram -->
+          <a href="https://vk.com/oohyesabhii" target="blank"><i class="fab fa-VK"></i> VK</a> <!-- Ссылка на VK -->
+          <a href="https://www.instagram.com/oohyesabhii" target="blank"><i class="fab fa-instagram"></i> Instagram</a> <!-- Ссылка на Instagram -->
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

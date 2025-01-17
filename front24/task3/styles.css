@@ -1,0 +1,92 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Georgia', serif; /* Используем более дружелюбный и мягкий шрифт */
+    background-color: #fafafa; /* Светлый, чуть сероватый фон для мягкости */
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для карточек товаров */
+.product-container {
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение карточек с небольшими промежутками */
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; /* Промежутки между карточками */
+}
+
+/* Стили для каждой карточки товара */
+.product-card {
+    background-color: #fff;
+    width: 280px; /* Немного меньше фиксированной ширины */
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Более мягкая тень */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Плавная анимация при наведении */
+    overflow: hidden;
+    border: 1px solid #ddd; /* Легкая граница для карточки */
+}
+
+/* Поддержка мобильных устройств: карточки будут растягиваться на меньших экранах */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+}
+
+/* Стили для изображения товара */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Картинки будут хорошо обрезаться */
+    transition: transform 0.3s ease;
+}
+
+/* Подсветка картинки при наведении */
+.product-card:hover img {
+    transform: scale(1.05); /* Немного увеличиваем картинку */
+}
+
+/* Стили для кнопки */
+.product-card button {
+    background-color: #6a4c39; /* Более теплый, коричнево-зеленый фон */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Georgia', serif; /* Шрифт для кнопки */
+}
+
+/* Изменение цвета кнопки при наведении */
+.product-card button:hover {
+    background-color: #8e6c4d; /* Темнее при наведении */
+    transform: translateY(-3px); /* Эффект поднятия кнопки */
+}
+
+/* Легкие стили для текста */
+.product-card h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+/* Описание товара */
+.product-card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
